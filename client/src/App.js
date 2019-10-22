@@ -1,5 +1,5 @@
-import React ,{ useState } from 'react';
-import { Route, Link } from 'react-router-dom';
+import React  from 'react';
+import { Route } from 'react-router-dom';
 import Homepage from './Homepage/Homepage';
 import QuizSection from './QuizSection/QuizSection';
 import Results from './Results/Results';
