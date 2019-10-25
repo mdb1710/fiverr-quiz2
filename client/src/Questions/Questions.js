@@ -9,7 +9,7 @@ const Questions = () => {
 
   const [totalYes, setTotalYes] = useState(0);
   const [totalNo, setTotalNo] = useState(0);
-  const [isCorrect, setIsCorrect] = useState(<span></span>);
+
   const [answered, setAnswered] = useState(false);
 
   const handleCheckAnswer = e => {
@@ -18,15 +18,15 @@ const Questions = () => {
 
     console.log(checkedAnswer, "was clicked - is it right?");
     if (checkedAnswer === value.correctAnswers[checkedNumber]) {
-      setTotalRight(totalRight + 1);
-      value.totalRight = totalRight;
+      setTotalYes(totalYes + 2);
+      value.totalYes = totalYes;
       console.log("You got it right!");
-      console.log(totalRight, value.totalRight);
+      console.log(totalYes, value.totalYes);
     } else {
-      setTotalWrong(totalWrong + 1);
-      value.totalWrong = totalWrong;
-      console.log("You got it wrong");
-      console.log(totalWrong, value.totalWrong);
+      setTotalNo(totalNo + 1);
+      value.totalNo = totalNo;
+      console.log("You got it No");
+      console.log(totalNo, value.totalNo);
     }
     setAnswered(true);
   };
@@ -39,7 +39,7 @@ const Questions = () => {
       return (
         <div key={index} id={qNumber}>
           <h3 className="question my-4">
-            {qNumber}. What season did {q.name} first appear?
+            {qNumber}. {q.name}?
           </h3>
           <form>
             <div className="input-group justify-content-center">

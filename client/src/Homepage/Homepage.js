@@ -58,7 +58,7 @@ const Homepage = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="Danielle Reyes"
+              placeholder="Enter name here"
               onChange={e => setTestName(e.target.value)}
               required
             />
