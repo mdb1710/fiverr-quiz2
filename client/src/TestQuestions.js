@@ -1,170 +1,67 @@
 const testQuestions = [
-    {
-        id: "1",
-        name: "Danielle Reyes",
-        answers: ["Season 1", "Season 14", "Season 8", "Season 3"],
-        correctAnswer: "Season 3",
-        answered: false
-
-    },
-    {
-        id: "2",
-        name: "Will Kirby",
-        answers: ["Season 18", "Season 5", "Season 2", "Season 12"],
-        correctAnswer: "Season 2",
-        answered: false
-    },
-    {
-        id: "3",
-        name: "Curtis Kin",
-        answers: ["Season 19", "Season 1", "Season 13", "Season 3"],
-        correctAnswer: "Season 1",
-        answered: false
-
-    },
-    {
-        id: "4",
-        name: "Jen Diturno",
-        answers: ["BBOTT", "Season 6", "Season 8", "Season 17"],
-        correctAnswer: "Season 8",
-        answered: false
-
-    },
-    {
-        id: "5",
-        name: "Kristen Bitting",
-        answers: ["Season 12", "Season 15", "Season 1", "Season 19"],
-        correctAnswer: "Season 12",
-        answered: false
-
-    },
-    {
-        id: "6",
-        name: "Jeremy McGuire",
-        answers: ["Season 2", "Season 9", "Season 15", "Season 20"],
-        correctAnswer: "Season 15",
-        answered: false
-
-    },
-    {
-        id: "7",
-        name: "Justin Giovinco",
-        answers: ["Season 13", "BBOTT", "Season 8", "Season 4"],
-        correctAnswer: "Season 4",
-        answered: false
-
-    },{
-        id: "8",
-        name: "Jason Guy",
-        answers: ["Season 7", "Season 19", "Season 3", "Season 17"],
-        correctAnswer: "Season 3",
-        answered: false
-
-    },
-    {
-        id: "9",
-        name: "Jason Agolli",
-        answers: ["Season 17", "Season 5", "BBOTT", "Season 18"],
-        correctAnswer: "Season 17",
-        answered: false
-
-    },
-    {
-        id: "10",
-        name: "Megan Lowder",
-        answers: ["Season 1", "Season 11", "Season 8", "Season 19"],
-        correctAnswer: "Season 19",
-        answered: false
-
-    },
-    {
-        id: "11",
-        name: "Sarah Hrejsa",
-        answers: ["Season 5", "Season 16", "Season 10", "Season 6"],
-        correctAnswer: "Season 6",
-        answered: false
-
-    },
-    {
-        id: "12",
-        name: "Lori Valenti",
-        answers: ["Season 1", "Season 14", "Season 5", "Season 3"],
-        correctAnswer: "Season 5",
-        answered: false
-
-    },
-    {
-        id: "13",
-        name: "Chima Simone",
-        answers: ["Season 12", "Season 1", "Season 9", "Season 11"],
-        correctAnswer: "Season 11",
-        answered: false
-
-    },
-    {
-        id: "14",
-        name: "Matthew Hoffman",
-        answers: ["Season 19", "Season 3", "Season 12", "Season 10"],
-        correctAnswer: "Season 12",
-        answered: false
-
-    },
-    {
-        id: "15",
-        name: "Bryan Ollie",
-        answers: ["Season 20", "Season 8", "Season 16", "Season 10"],
-        correctAnswer: "Season 10",
-        answered: false
-
-    },
-    {
-        id: "16",
-        name: "Kara Monaco",
-        answers: ["Season 18", "Season 16", "Season 4", "BBOTT"],
-        correctAnswer: "Season 16",
-        answered: false
-
-    },
-    {
-        id: "17",
-        name: "Dan Gheesling",
-        answers: ["Season 10", "Season 14", "Season 6", "Season 9"],
-        correctAnswer: "Season 10",
-        answered: false
-
-    },
-    {
-        id: "18",
-        name: "Michelle Meyer",
-        answers: ["Season 10", "Season 19", "Season 8", "Season 18"],
-        correctAnswer: "Season 18",
-        answered: false
-
-    },
-    {
-        id: "19",
-        name: "Shane Chapman",
-        answers: ["Season 1", "Season 19", 'BBOTT', "Season 6"],
-        correctAnswer: "BBOTT",
-        answered: false
-
-    },
-    {
-        id: "20",
-        name: "Michael Dutz",
-        answers: ["Season 2", "Season 5", "Season 8", "Season 6"],
-        correctAnswer: "Season 8",
-        answered: false
-
-    },
-    {
-        id: "21",
-        name: "Brett Robinson",
-        answers: ["Season 19", "Season 13", "BBOTT", "Season 20"],
-        correctAnswer: "Season 20",
-        answered: false
-
-    },
-]
+  {
+    id: "1",
+    question:
+      "Bathroom:  Able to bathe independently. May need assistance to clean hard to reach areas such as the back, otherwise no problems anticipated. Able to use the toilet without assistance.",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 3",
+    answered: false
+  },
+  {
+    id: "2",
+    name:
+      "Basic food preparation as well as the ability to eat from a plate. [Able to warm-up prepared food.  Adequate proficiency with eating utensils.]",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 2",
+    answered: false
+  },
+  {
+    id: "3",
+    name:
+      "Medications - able to maintain compliance with all prescribed medications without help from others.  [Medications may be delivered to the house e.g. it is not necessary for self pick-up from the local pharmacy.]",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 1",
+    answered: false
+  },
+  {
+    id: "4",
+    name:
+      "Getting dressed - no issues encountered. Able to manage all aspects including changing under garments, clothing, etc.",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 8",
+    answered: false
+  },
+  {
+    id: "5",
+    name:
+      "Finances -able to keep track of expenses and handle transactions from home including paying for outside services (shopping, lawn care, etc). This also includes the ability to use a telephone if necessary",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 12",
+    answered: false
+  },
+  {
+    id: "6",
+    name: "Able to maintain the interior of the house (cleaning, laundry, etc)",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 15",
+    answered: false
+  },
+  {
+    id: "7",
+    name:
+      "Able to complete shopping tasks for basic necessities independently without assistance. May use a third-party for transportation.",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 4",
+    answered: false
+  },
+  {
+    id: "8",
+    name:
+      "Ability to travel - appointments, shopping, drug store, etc.  May use a third-party for transportation, however, does not require assistance entering or exiting vehicle",
+    answers: ["Yes", "No"],
+    correctAnswer: "Season 3",
+    answered: false
+  }
+];
 
 export default testQuestions;
