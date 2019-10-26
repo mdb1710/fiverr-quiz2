@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { withRouter } from "react-router";
 import QuizContext from "../QuizContext/QuizContext";
 import { Link } from "react-router-dom";
+import ResultMeter from "../Meter/ResultMeter";
 
 const Results = () => {
   const value = useContext(QuizContext);
@@ -40,8 +41,8 @@ const Results = () => {
         <p className="text-success bg-light h-50">
           Your score is {value.totalYes}
         </p>
-
         <button onClick={checkStatus}>See Your Status</button>
+        <ResultMeter />
         <div className="status-display">{status}</div>
         <Link to="/quiz">
           <button className="my-3">Try Again</button>
