@@ -45,6 +45,15 @@ const Results = () => {
         <button onClick={checkStatus}>See Your Status</button>
         <ResultMeter />
         <div className="status-display">{status}</div>
+        <div className="more-info">
+          <h4>
+            If you would like more information on these results, check out our{" "}
+            <span>
+              <a href="http://www.Eldercarechannel.com">website</a>
+            </span>{" "}
+            or call 636-535-1180
+          </h4>
+        </div>
         <Link to="/quiz">
           <button className="my-3">Try Again</button>
         </Link>

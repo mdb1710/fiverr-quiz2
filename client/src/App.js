@@ -8,10 +8,14 @@ import QuizContext from "./QuizContext/QuizContext";
 
 import testQuestions from "./TestQuestions";
 
+import "./App.css";
+
 const App = () => {
   const bbAnswers = testQuestions.map(answer => {
     return answer.correctAnswer;
   });
+
+  const logoImage = require("./assets/eldercare-logo-transparent-bg-2.png");
 
   console.log(bbAnswers);
 
@@ -33,7 +37,9 @@ const App = () => {
           Activities of Daily Living Quiz
         </h1>
       </header>
-
+      <div className="logo-image">
+        <img src={logoImage} alt="Eldercare logo" />
+      </div>
       <main>
         <QuizContext.Provider value={contextValue}>
           <Route exact path="/" component={Homepage} />

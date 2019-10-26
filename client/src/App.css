@@ -4,9 +4,10 @@
 
 
 
-.App-header {
-  width: 80%
-}
+/* .App-header {
+  width: 60%;
+  margin-left: 80px;
+} */
 
 .App-link {
   color: #61dafb;
@@ -16,6 +17,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -25,11 +27,16 @@
   list-style: none;
 }
 
-input[type=radio]:checked + label {
+input[type=radio]:checked+label {
   color: red;
   font-style: italic;
 }
 
 header {
   text-align: center;
+}
+
+.logo-image {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
