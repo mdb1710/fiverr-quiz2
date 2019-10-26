@@ -3,13 +3,14 @@ import { withRouter } from "react-router";
 import QuizContext from "../QuizContext/QuizContext";
 import { Link } from "react-router-dom";
 import ResultMeter from "../Meter/ResultMeter";
+import "./Results.css";
 
 const Results = () => {
   const value = useContext(QuizContext);
   const [status, setStatus] = useState("");
 
   const checkStatus = () => {
-    let score = value.totalRight - value.totalWrong;
+    let score = value.totalYes - value.totalNo;
     switch (true) {
       case score > 11:
         setStatus(

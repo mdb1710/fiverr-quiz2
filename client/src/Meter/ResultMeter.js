@@ -13,7 +13,7 @@ const ResultMeter = () => {
     <div className="results">
       <ReactSpeedometer
         width={500}
-        height={500}
+        height={300}
         minValue={midValue}
         maxValue={maxValue}
         segments={answerSegments}
