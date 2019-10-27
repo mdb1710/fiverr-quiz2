@@ -45,10 +45,10 @@ const Homepage = () => {
 
   return (
     <div className="home mb-10 d-flex flex-lg-column">
-      <h2 className="mt-2 shadow-sm text-center w-100 h-100">Mobility Quiz</h2>
+      <h2 className="mt-2 shadow-sm text-center w-100 h-100">Ability Quiz</h2>
       <div className="intro row justify-content-center mb-10 mt-10">
         <p className="col-md-2 mt-6">
-          Test your mobility by answering a few questions
+          Test your mobility and ability to stay independent at home
         </p>
       </div>
       <div className="start d-flex justify-content-center rounded-lg form-group">
