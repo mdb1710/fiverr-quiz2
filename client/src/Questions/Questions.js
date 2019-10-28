@@ -14,12 +14,12 @@ const Questions = () => {
 
   const handleCheckAnswer = e => {
     let checkedAnswer = e.target.value;
-    let checkedNumber = e.target.id;
+    let checkedNumber = e.target.id - 1;
 
     console.log(checkedAnswer, "was clicked - is it right?");
     if (checkedAnswer === value.correctAnswers[checkedNumber]) {
       setTotalYes(totalYes + 2);
-      // value.totalYes = totalYes;
+      value.totalYes = totalYes;
       console.log("You got it right!");
       console.log(totalYes, value.totalYes);
     } else {
@@ -29,6 +29,7 @@ const Questions = () => {
       console.log(totalNo, value.totalNo);
     }
     setAnswered(true);
+    value.answered = answered;
   };
 
   const newQuestions = testQuestions.map((q, index) => {
