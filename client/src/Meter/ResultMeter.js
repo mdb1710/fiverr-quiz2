@@ -5,7 +5,7 @@ import QuizContext from "../QuizContext/QuizContext";
 const ResultMeter = () => {
   const value = useContext(QuizContext);
   let score = value.totalYes - value.totalNo;
-  const midValue = 0;
+  const midValue = 1;
   const maxValue = 16;
   const answerSegments = 5;
 
