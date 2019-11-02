@@ -18,10 +18,17 @@ const Questions = () => {
 
     console.log(checkedAnswer, "was clicked - is it right?");
     if (checkedAnswer === value.correctAnswers[checkedNumber]) {
-      setTotalYes(totalYes + 2);
-      value.totalYes = totalYes;
-      console.log("You got it right!");
-      console.log(totalYes, value.totalYes);
+      if (checkedNumber < 5) {
+        setTotalYes(totalYes + 2);
+        value.totalYes = totalYes;
+        console.log("You got it right!");
+        console.log(totalYes, value.totalYes);
+      } else {
+        setTotalYes(totalYes + 1);
+        value.totalYes = totalYes;
+        console.log("You got it right!");
+        console.log(totalYes, value.totalYes);
+      }
     } else {
       setTotalNo(totalNo + 1);
       value.totalNo = totalNo;
@@ -33,7 +40,7 @@ const Questions = () => {
   };
 
   const newQuestions = testQuestions.map((q, index) => {
-    let answer = q.correctAnswer;
+    // let answer = q.correctAnswer;
     let qNumber = q.id;
 
     if (value.display === true) {
