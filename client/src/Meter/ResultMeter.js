@@ -8,6 +8,7 @@ const ResultMeter = () => {
   const midValue = 1;
   const maxValue = 16;
   const answerSegments = 5;
+  console.log(score);
 
   return (
     <div className="results">
